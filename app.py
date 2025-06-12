@@ -20,7 +20,7 @@ migrate = Migrate(app, db)
 
 db.init_app(app)
 
-@app.route("/",methods=["POST"])
+@app.route("/",methods=["GET"])
 def index():
     return {"message":"Welcome to my recipe app"}
 
